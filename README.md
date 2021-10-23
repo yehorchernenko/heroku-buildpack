@@ -120,7 +120,9 @@ source code inside the following files in your repository:
 - `bin/pre_compile`
 - `bin/post_compile`
 
-This is useful if you would need to customize the final image.
+This is useful if you need to customize the final image.
+
+The buildpack passes three arguments to the scripts: the BUILD_DIR, CACHE_DIR and ENV_DIR paths that Heroku provided for the build. See the [Buildpack API documentation](https://devcenter.heroku.com/articles/buildpack-api) for details.
 
 #### Example: using private dependencies
 
