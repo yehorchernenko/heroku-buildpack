@@ -4,7 +4,7 @@
 set -e
 set -o pipefail
 
-BIN_DIR=$(cd $(dirname $0); pwd)
+BIN_DIR="$(cd $(dirname $0); pwd)/P2PServer"
 ROOT_DIR=$(dirname $BIN_DIR)
 
 BUILD_DIR=$1
